@@ -14,13 +14,83 @@
 
 <body class="bg-white">
 
+    <header class="bg-gray-100 border-b flex items-center justify-between px-4 py-2">
+        <!-- Left: Logo & Product Switcher -->
+        <div class="flex items-center space-x-4">
+            <!-- Logo -->
+            <a href="https://colorlib.com/wp/templates/" title="Switcher" class="flex items-center">
+                <img src="assets/img/logo.png" alt="Colorlib logo" class="h-8 w-auto">
+            </a>
+
+            <!-- Product Switcher -->
+            <a href="#" title="Select a Product"
+                class="text-sm text-gray-800 hover:text-blue-600 flex items-center space-x-1">
+                <span>Coza Store</span>
+                <span class="text-xs bg-blue-500 text-white px-2 py-0.5 rounded-full">Template</span>
+            </a>
+        </div>
+
+        <!-- Right: Icons -->
+        <div class="flex items-center space-x-4">
+            <!-- Desktop View -->
+            <a href="#" title="Desktop View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
+                <!-- Desktop Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.75 17h4.5M3 5.25h18v10.5H3V5.25z" />
+                </svg>
+            </a>
+
+            <!-- Tablet View -->
+            <a href="#" title="Tablet View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
+                <!-- Tablet Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 3.75h12a.75.75 0 01.75.75v15a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V4.5A.75.75 0 016 3.75zM12 18.75h.008v.008H12v-.008z" />
+                </svg>
+            </a>
+
+            <!-- Mobile View -->
+            <a href="#" title="Smartphone View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
+                <!-- Mobile Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 4.5h10a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7a.75.75 0 01-.75-.75V5.25A.75.75 0 017 4.5zM12 17.25h.008v.008H12v-.008z" />
+                </svg>
+            </a>
+
+            <!-- Purchase Button -->
+            <a href="#" title="Buy now" class="text-gray-600 hover:text-green-600">
+                <!-- Shopping Cart Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7M7 13l1.293 2.293a1 1 0 00.707.207h7a1 1 0 00.707-.207L17 13M9 21h.01M15 21h.01" />
+                </svg>
+            </a>
+
+            <!-- Remove Button -->
+            <a href="#" title="Close this bar" class="text-gray-600 hover:text-red-500">
+                <!-- Close Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+
     <!-- Header / Topbar -->
     <header class="bg-gray-800 text-gray-400  py-2 px-4 hidden md:flex justify-between items-center text-sm ">
 
-        <span class="mx-20">Free shipping for standard order over $100</span>
+        <span class="md:mx-20 bg-gray-800 border-x-">Free shipping for standard order over $100</span>
 
         <div class="space-x-4 mx-20">
-            <a href="#" class="hover:text-indigo-400 border border-2 border-gray-100">Help & FAQs</a>
+            <a href="#" class="hover:text-indigo-400 ">Help & FAQs</a>
             <a href="#" class="hover:text-indigo-400 ">My Account</a>
             <a href="#" class="hover:text-indigo-400 ">EN</a>
             <a href="#" class="hover:text-indigo-400 ">USD</a>
@@ -28,31 +98,28 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="bg-white shadow sticky top-0 w-full  ">
-        <div class="mx-20 px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl text-gray-700 "><span class="font-bold text-gray-900">COZA</span> STORE</div>
-            <ul class="hidden md:flex space-x-6 text-sm font-medium">
-                <li><a href="#" class="hover:text-indigo-400 ">Home</a></li>
-                <li><a href="#" class="hover:text-indigo-400 ">Shop</a></li>
-                <li><a href="#" class="hover:text-indigo-400 relative">Features<span
-                            class="text-xs text-white bg-red-400 px-1 rounded absolute -top-4 -right-5">HOT</span></a>
-                </li>
-                <li><a href="#" class="hover:text-indigo-400">Blog</a></li>
-                <li><a href="#" class="hover:text-indigo-400">About</a></li>
-                <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
-            </ul>
+    <nav class="bg-white shadow sticky top-0 z-50  absolute">
+        <div>
+            <div class="md:mx-20 px-4 py-4 flex justify-between items-center">
+                <div class="text-2xl text-gray-700 "><span class="font-bold text-gray-900">COZA</span> STORE</div>
+                <ul class="hidden md:flex space-x-6 text-sm font-medium">
+                    <li><a href="#" class="hover:text-indigo-400 ">Home</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 ">Shop</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 relative">Features<span
+                                class="text-xs text-white bg-red-400 px-1 rounded absolute -top-4 -right-5">HOT</span></a>
+                    </li>
+                    <li><a href="#" class="hover:text-indigo-400">Blog</a></li>
+                    <li><a href="#" class="hover:text-indigo-400">About</a></li>
+                    <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
+                </ul>
 
-            <!-- Icons -->
-            <div class="space-x-4 text-lg">
-                <i class="fas fa-search cursor-pointer"></i>
-                <i class="fas fa-shopping-cart cursor-pointer relative">
-                    <!-- <span class="absolute -top-2 -right-2 text-xs bg-blue-500 text-white rounded-full px-1">2</span> -->
-                </i>
-                <i class="far fa-heart cursor-pointer relative">
-                    <!-- <span class="absolute -top-2 -right-2 text-xs bg-purple-500 text-white rounded-full px-1">0</span> -->
-                </i>
+                <!-- Icons -->
+                <div class="space-x-4 text-lg">
+                    <i class="fas fa-search cursor-pointer"></i>
+                    <i class="fas fa-shopping-cart cursor-pointer relative"></i>
+                    <i class="far fa-heart cursor-pointer relative"></i>
+                </div>
             </div>
-        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -91,7 +158,7 @@
         </button>
     </section>
 
-    <section class="bg-white p-6 mx-20">
+    <section class="bg-white p-6 md:mx-20 ">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
 
@@ -110,7 +177,8 @@
                             2018</span>
                     </div>
                     <div class="text-white mb-4">
-                        <a href="#" class="relative inline-block text-sm text-black ml-4 group group-hover:text-white">
+                        <a href="#"
+                            class="relative inline-block text-sm text-black ml-4 group group-hover:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-4">
                             Shop Now
                             <!-- Left half -->
                             <span
@@ -127,48 +195,68 @@
             </div>
 
             <!-- Banner 2 -->
-            <div class="relative group overflow-hidden rounded-lg shadow-lg fade-in-up" style="animation-delay: 0.2s;">
-                <img src="images/banner-02.jpg" alt="Men"
+            <div class="relative group overflow-hidden rounded-lg shadow-lg fade-in-up ">
+                <img src="images/banner-02.jpg" alt="Women"
                     class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <a href="product.html"
-                    class="absolute inset-0 bg-black/10 text-black flex flex-col justify-between p-6 transition group-hover:bg-black/50">
+                    class="absolute inset-0 text-black flex flex-col justify-between p-6 transition group-hover:bg-black/20">
                     <div class="transition-all">
-                        <span class="block text-2xl text-black/80 font-bold ml-4 mb-2 group-hover:text-white">Men</span>
+                        <span
+                            class="block text-2xl text-black/80 font-bold ml-4 mb-2 group-hover:text-white">Women</span>
                         <span
                             class="text-sm group-hover:opacity-100 opacity-80 ml-4 text-black group-hover:text-white">Spring
                             2018</span>
                     </div>
-                    <div class="mt-4 text-black ml-4 text-sm underline underline-offset-4 group-hover:text-white ">Shop
-                        Now
-                        <span
-                            class="absolute bottom-[-2px] left-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full -translate-x-1/2"></span>
-                        <!-- Right half -->
-                        <span
-                            class="absolute bottom-[-2px] right-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full translate-x-1/2"></span>
+                    <div class="text-white mb-4">
+                        <a href="#"
+                            class="relative inline-block text-sm text-black ml-4 group group-hover:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-4">
+                            Shop Now
+                            <!-- Left half -->
+                            <span
+                                class="absolute bottom-[-2px] left-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full -translate-x-1/2"></span>
+                            <!-- Right half -->
+                            <span
+                                class="absolute bottom-[-2px] right-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full translate-x-1/2"></span>
+                        </a>
                     </div>
+
+
+
                 </a>
             </div>
 
             <!-- Banner 3 -->
-            <div class="relative group overflow-hidden rounded-lg shadow-lg fade-in-up" style="animation-delay: 0.4s;">
-                <img src="images/banner-03.jpg" alt="Kids"
+            <div class="relative group overflow-hidden rounded-lg shadow-lg fade-in-up ">
+                <img src="images/banner-03.jpg" alt="Women"
                     class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <a href="product.html"
-                    class="absolute inset-0 bg-black/10 text-black flex flex-col justify-between p-6 transition group-hover:bg-black/50">
+                    class="absolute inset-0 text-black flex flex-col justify-between p-6 transition group-hover:bg-black/20">
                     <div class="transition-all">
                         <span
-                            class="block text-2xl text-black/80 font-bold ml-4 mb-2 group-hover:text-white">Accessories</span>
+                            class="block text-2xl text-black/80 font-bold ml-4 mb-2 group-hover:text-white">Women</span>
                         <span
-                            class="text-sm group-hover:opacity-100 opacity-80 ml-4 text-black group-hover:text-white">New
-                            Trend</span>
+                            class="text-sm group-hover:opacity-100 opacity-80 ml-4 text-black group-hover:text-white">Spring
+                            2018</span>
                     </div>
-                    <div class="mt-4 text-black ml-4 text-sm underline underline-offset-4 group-hover:text-white ">Shop
-                        Now</div>
+                    <div class="text-white mb-4">
+                        <a href="#"
+                            class="relative inline-block text-sm text-black ml-4 group group-hover:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-4">
+                            Shop Now
+                            <!-- Left half -->
+                            <span
+                                class="absolute bottom-[-2px] left-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full -translate-x-1/2"></span>
+                            <!-- Right half -->
+                            <span
+                                class="absolute bottom-[-2px] right-1/2 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full translate-x-1/2"></span>
+                        </a>
+                    </div>
+
+
+
                 </a>
             </div>
-
         </div>
 
     </section>
@@ -178,270 +266,899 @@
     <!-- Product Switcher / Templates Showcase -->
 
 
-    <div class="mx-20 px-4 bg-white">
-        <h2 class="text-4xl font-bold tracking-wide mb-8">PRODUCT OVERVIEW</h2>
-
-        <!-- sorting bar -->
-        <section class="w-full mb-30 ">
-            <div class="text-gray-500">
-                <div class="space-x-4  mb-6">
-                    <a href="#" class="underline text-black/80">All Products</a>
-                    <a href="#" class="hover:underline hover:text-black underline-offset-4">Women</a>
-                    <a href="#" class="hover:underline hover:text-black underline-offset-4">Men</a>
-                    <a href="#" class="hover:underline hover:text-black underline-offset-4">Bag</a>
-                    <a href="#" class="hover:underline hover:text-black underline-offset-4">Shoes</a>
-                    <a href="#" class="hover:underline hover:text-black underline-offset-4">Watches</a>
-                </div>
-            </div>
-
-            <div class="w-full pt-10 ">
-
-
-                
-                <!-- Button Container with Filter and Search -->
-                <div class="flex justify-end w-full space-x-4 sticky top-0 z-20 bg-white py-4">
-                    <!-- Filter Dropdown -->
-                    <details class="relative">
-                        <summary
-                            class="inline-flex items-center cursor-pointer rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M6 12h12M10 18h4">
-                                </path>
-                            </svg>
-                            Filter
-                        </summary>
-                        <div
-                            class="mt-4 w-screen max-w-6xl absolute right-0 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-6 py-8">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                                <!-- Sort By -->
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Sort By</h3>
-                                    <ul class="space-y-2">
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Default</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Popularity</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Average
-                                                rating</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-blue-600 font-medium transition">Newness</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Price:
-                                                Low to High</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Price:
-                                                High to Low</a></li>
-                                    </ul>
-                                </div>
-
-                                <!-- Price -->
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Price</h3>
-                                    <ul class="space-y-2">
-                                        <li><a href="#"
-                                                class="block text-sm text-blue-600 font-medium transition">All</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">$0.00
-                                                - $50.00</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">$50.00
-                                                - $100.00</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">$100.00
-                                                - $150.00</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">$150.00
-                                                - $200.00</a></li>
-                                        <li><a href="#"
-                                                class="block text-sm text-gray-700 hover:text-blue-600 transition">$200.00+</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Color -->
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Color</h3>
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center"><span
-                                                class="w-3 h-3 mr-2 rounded-full bg-black"></span><a href="#"
-                                                class="text-sm text-gray-700 hover:text-blue-600 transition">Black</a>
-                                        </li>
-                                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full"
-                                                style="background-color: #4272d7;"></span><a href="#"
-                                                class="text-sm text-blue-600 font-medium transition">Blue</a></li>
-                                        <li class="flex items-center"><span
-                                                class="w-3 h-3 mr-2 rounded-full bg-gray-300"></span><a href="#"
-                                                class="text-sm text-gray-700 hover:text-blue-600 transition">Grey</a>
-                                        </li>
-                                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full"
-                                                style="background-color: #00ad5f;"></span><a href="#"
-                                                class="text-sm text-gray-700 hover:text-blue-600 transition">Green</a>
-                                        </li>
-                                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full"
-                                                style="background-color: #fa4251;"></span><a href="#"
-                                                class="text-sm text-gray-700 hover:text-blue-600 transition">Red</a>
-                                        </li>
-                                        <li class="flex items-center"><span
-                                                class="w-3 h-3 mr-2 rounded-full bg-gray-400 border border-white"></span><a
-                                                href="#"
-                                                class="text-sm text-gray-700 hover:text-blue-600 transition">White</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Tags -->
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Tags</h3>
-                                    <div class="flex flex-wrap gap-2">
-                                        <a href="#"
-                                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Fashion</a>
-                                        <a href="#"
-                                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Lifestyle</a>
-                                        <a href="#"
-                                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Denim</a>
-                                        <a href="#"
-                                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Streetstyle</a>
-                                        <a href="#"
-                                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Crafts</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-
-                    <!-- Search Toggle (pure Tailwind using details) -->
-                    <details class="relative">
-                        <summary
-                            class="inline-flex items-center cursor-pointer rounded-md border border-gray-300 shadow-sm px-3 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </summary>
-                        <div
-                            class="absolute right-0 z-10 mt-2 w-[32rem] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-6 py-4">
-                            <input type="text" placeholder="Search..."
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-                        </div>
-                    </details>
-                </div>
-
-
-
-        </section>
-
-        <section class=" bg-gray-50 py-16 flex">
-            <div class=" grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white shadow rounded">
-                    <img src="https://preview.colorlib.com/theme/cozastore/images/product-01.jpg" class="mb-4 w-full"
-                        alt="Product 1">
-                    <h3 class="font-semibold text-lg">Coza Basic</h3>
-                    <p class="text-sm text-gray-600">Minimalist style clothing layout.</p>
-                </div>
-                <div class="bg-white shadow rounded">
-                    <img src="https://preview.colorlib.com/theme/cozastore/images/product-02.jpg" class="mb-4 w-full"
-                        alt="Product 2">
-                    <h3 class="font-semibold text-lg">Coza Bold</h3>
-                    <p class="text-sm text-gray-600">Bold and trendy ecommerce theme.</p>
-                </div>
-                <div class="bg-white shadow rounded">
-                    <img src="https://preview.colorlib.com/theme/cozastore/images/product-03.jpg" class="mb-4 w-full"
-                        alt="Product 3">
-                    <h3 class="font-semibold text-lg">Coza Classic</h3>
-                    <p class="text-sm text-gray-600">Elegant layout for premium stores.</p>
-                </div>
-                <div class="bg-white shadow rounded">
-                    <img src="images/product-04.jpg.webp" class="mb-4 w-full" alt="Product 3">
-                    <h3 class="font-semibold text-lg">Classic Trench Coat</h3>
-                    <p class="text-sm text-gray-600">$75.00</p>
-                </div>
-            </div>
-
-        </section>
+    <div class="md:mx-20 px-4 bg-white ">
+        <h2 class="text-4xl font-bold tracking-wide mb-8 ">PRODUCT OVERVIEW</h2>
     </div>
 
+    <section class="md:mx-20 px-4 mb-30">
+        <!-- Top Row: Category links + Filter & Search -->
+        <div class="flex flex-wrap items-center justify-between mb-4 text-gray-500">
+            <!-- Left: Category Links -->
+            <div class="space-x-4">
+                <a href="#" class="underline text-black/80">All Products</a>
+                <a href="#" class="hover:underline hover:text-black underline-offset-4">Women</a>
+                <a href="#" class="hover:underline hover:text-black underline-offset-4">Men</a>
+                <a href="#" class="hover:underline hover:text-black underline-offset-4">Bag</a>
+                <a href="#" class="hover:underline hover:text-black underline-offset-4">Shoes</a>
+                <a href="#" class="hover:underline hover:text-black underline-offset-4">Watches</a>
+            </div>
 
+            <!--Filter & Search Buttons -->
+            <div class="flex space-x-4 sticky top-0 z-20 bg-white py-2">
+                <button id="toggleFilter"
+                    class="inline-flex items-center cursor-pointer rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M6 12h12M10 18h4"></path>
+                    </svg>
+                    Filter
+                </button>
 
-</body>
-
-<footer class="bg-gray-900 text-white py-12 px-4 md:px-20">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-      <!-- Categories -->
-      <div>
-        <h2 class="font-bold mb-4">CATEGORIES</h2>
-        <ul class="space-y-2 text-gray-300">
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Shoes</a></li>
-          <li><a href="#">Watches</a></li>
-        </ul>
-      </div>
-
-      <!-- Help -->
-      <div>
-        <h2 class="font-bold mb-4">HELP</h2>
-        <ul class="space-y-2 text-gray-300">
-          <li><a href="#">Track Order</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-
-      <!-- Get in Touch -->
-      <div>
-        <h2 class="font-bold mb-4">GET IN TOUCH</h2>
-        <p class="text-gray-300 text-sm">Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY
-          10018 or call us on (+1) 96 716 6879</p>
-        <div class="flex space-x-4 mt-4 text-gray-300 text-xl">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
+                <button id="toggleSearch"
+                    class="inline-flex items-center cursor-pointer rounded-md border border-gray-300 shadow-sm px-3 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
 
-      <!-- Newsletter -->
-      <div>
-        <h2 class="font-bold mb-4">NEWSLETTER</h2>
-        <input type="email" placeholder="email@example.com"
-          class="w-full bg-transparent border-b border-gray-600 py-2 text-gray-300 focus:outline-none mb-4">
-        <button class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-6 rounded-full">SUBSCRIBE</button>
-      </div>
+        <!-- Filter Panel -->
+        <div id="filterPanel" class="hidden transition-all duration-300 overflow-hidden ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 bg-white p-6 rounded-md shadow">
+                <!-- Sort By -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Sort By</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">Default</a>
+                        </li>
+                        <li><a href="#"
+                                class="block text-sm text-gray-700 hover:text-blue-600 transition">Popularity</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">Average
+                                rating</a></li>
+                        <li><a href="#" class="block text-sm text-blue-600 font-medium transition">Newness</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">Price: Low to
+                                High</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">Price: High
+                                to Low</a></li>
+                    </ul>
+                </div>
+
+                <!-- Price -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Price</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block text-sm text-blue-600 font-medium transition">All</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">$0.00 -
+                                $50.00</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">$50.00 -
+                                $100.00</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">$100.00 -
+                                $150.00</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">$150.00 -
+                                $200.00</a></li>
+                        <li><a href="#" class="block text-sm text-gray-700 hover:text-blue-600 transition">$200.00+</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Color -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Color</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full bg-black"></span><a
+                                href="#" class="text-sm text-gray-700 hover:text-blue-600 transition">Black</a></li>
+                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full bg-[#4272d7]"></span><a
+                                href="#" class="text-sm text-blue-600 font-medium transition">Blue</a></li>
+                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full bg-gray-300"></span><a
+                                href="#" class="text-sm text-gray-700 hover:text-blue-600 transition">Grey</a></li>
+                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full bg-[#00ad5f]"></span><a
+                                href="#" class="text-sm text-gray-700 hover:text-blue-600 transition">Green</a></li>
+                        <li class="flex items-center"><span class="w-3 h-3 mr-2 rounded-full bg-[#fa4251]"></span><a
+                                href="#" class="text-sm text-gray-700 hover:text-blue-600 transition">Red</a></li>
+                        <li class="flex items-center"><span
+                                class="w-3 h-3 mr-2 rounded-full bg-gray-400 border border-white"></span><a href="#"
+                                class="text-sm text-gray-700 hover:text-blue-600 transition">White</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tags -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Tags</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#"
+                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Fashion</a>
+                        <a href="#"
+                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Lifestyle</a>
+                        <a href="#"
+                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Denim</a>
+                        <a href="#"
+                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Streetstyle</a>
+                        <a href="#"
+                            class="text-sm text-gray-700 border border-gray-300 px-3 py-1 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">Crafts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Panel -->
+        <div id="searchPanel" class="hidden transition-all duration-300 overflow-hidden">
+            <div class="w-full">
+                <input type="text" placeholder="Search..."
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 mb-6" />
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <section id="mainContent" class="">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+            <!-- Product Card -->
+            <div class="group relative flex flex-col h-full ">
+
+                <div class="overflow-hidden relative">
+                    <img src="images/product-01.jpg" alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Esprit Ruffle Shirt</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$16.64</p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="group relative">
+
+                <div class="overflow-hidden relative">
+                    <img src="images/product-02.jpg.webp" alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                 <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Herschel Supply</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$35.31</p>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-03.jpg.webp" alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                 <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Only Check Trouser</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$25.50</p>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="group relative">
+                
+                <div class="overflow-hidden relative">
+                    <img src="images/product-04.jpg" alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Classic Trench Coat</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$75.00</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Second Row -->
+
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+           
+            <!-- Card 5 -->
+            <div class="group relative">
+                <!-- Image Wrapper -->
+                <div class="overflow-hidden relative">
+                    <img src="images/product-05.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Front Pocket Jumper</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$34.75</p>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-06.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Vintage Inspired Classic</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$93.20</p>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="group relative">
+                <!-- Image Wrapper -->
+                <div class="overflow-hidden relative">
+                    <img src="images/product-07.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Shirt in Strech Cotton</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$52.66</p>
+                </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="group relative">
+                <!-- Image Wrapper -->
+                <div class="overflow-hidden relative">
+                    <img src="images/product-08.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                 <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Pieces Metalic Printed</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$18.96</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+            <!-- Card 9 -->
+            <div class="group relative">
+                
+                <div class="overflow-hidden relative">
+                    <img src="images/product-09.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Converse All Star Hi Plimsolls</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$75.00</p>
+                </div>
+            </div>
+
+            <!-- card 10 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-10.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Femme T-Shirt Stripe</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$25.85</p>
+                </div>
+            </div>
+
+            <!-- card 11 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-11.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                 <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Herschel Supply</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$63.16</p>
+                </div>
+            </div>
+
+            <!-- card 12 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-12.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Herschel Supply</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$63.15</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+            <!-- Card 13 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-13.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">T-Shirt with Sleeve</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$18.49</p>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="group relative">
+                
+                <div class="overflow-hidden relative">
+                    <img src="images/product-14.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Pretty Little Thing</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$54.79</p>
+                </div>
+            </div>
+
+            <!-- card 15 -->
+            <div class="group relative">
+              
+                <div class="overflow-hidden relative">
+                    <img src="images/product-15.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Mini Silver Mesh Watch</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$86.85</p>
+                </div>
+            </div>
+
+            <!-- Card 16 -->
+            <div class="group relative">
+               
+                <div class="overflow-hidden relative">
+                    <img src="images/product-16.jpg.webp"
+                        alt="Esprit Ruffle Shirt"
+                        class="w-full h-[300px] object-contain transform transition-transform duration-500 group-hover:scale-105" />
+
+                    <!-- Quick View Button -->
+                    <button
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        Quick View
+                    </button>
+                </div>
+
+                <!-- Product Info -->
+                <div class="mt-4 px-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-gray-700 text-sm font-medium ml-7 md:ml-5">Square Neck Back</h2>
+
+                        <!-- Like Button -->
+                        <div class="relative mr-10">
+                            <input type="checkbox" id="wish1" class="peer hidden">
+                            <label for="wish1" class="cursor-pointer">
+                                <!-- Heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 text-gray-400 absolute top-0 left-0 peer-checked:opacity-0 transition-opacity duration-300"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 1.818C21.248 9.124 18.634 12.081 12 17.25 5.366 12.081 2.752 9.124 4.318 6.318z" />
+                                </svg>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-900 font-semibold mt-1 ml-7 md:ml-5">$29.64</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <div class="flex justify-center  border-gray-600 ">
+        <!-- <button
+            class=" rounded-full bg-black text-white h-20 w-70">
+            LOAD MORE
+        </button> -->
+
+        <button class="bg-gray-400 mt-[90px] mb-[150px] hover:bg-gray-900 text-white py-2 px-[30px] rounded-full">LOAD
+            MORE</button>
     </div>
 
-    <!-- Bottom Info -->
-    <div class="mt-12 text-center">
-      <div class="flex justify-center space-x-4 mb-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJVLtfGJ-EXUPR7U2X25F9LwjEWL0RLGI2Q&s"
-          alt="PayPal" class=" w-8 h-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class=" w-8 h-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard"
-          class="w-8 h-6">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png"
-          alt="Amex" class="w-8 h-6">
-        <img
-          src="data:image/png;base64,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"
-          alt="Discover" class="w-8 h-6">
-      </div>
-      <p class="text-gray-400 text-sm">Copyright ©2025 All rights reserved | This template is made with <span
-          class="text-red-500">&#10084;</span> by <a href="https://colorlib.com" class="text-blue-400">Colorlib</a></p>
-    </div>
 
-    <!-- Back to top arrow -->
-    <div class="fixed bottom-2 right-6">
-      <a href="#" class="bg-gray-00 hover:bg-indigo-600 text-white p-3  shadow-lg transition duration-300">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-  </footer>
 
+
+
+
+    <footer class="bg-gray-900 text-white py-12 px-4 md:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Categories -->
+            <div>
+                <h2 class="font-bold mb-4">CATEGORIES</h2>
+                <ul class="space-y-2 text-gray-300 ">
+                    <li><a href="#" class="hover:text-indigo-600">Women</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Men</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Shoes</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Watches</a></li>
+                </ul>
+            </div>
+
+            <!-- Help -->
+            <div>
+                <h2 class="font-bold mb-4">HELP</h2>
+                <ul class="space-y-2 text-gray-300 ">
+                    <li><a href="#" class="hover:text-indigo-600">Track Order</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Returns</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Shipping</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">FAQs</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Get in Touch -->
+            <div>
+                <h2 class="font-bold mb-4">GET IN TOUCH</h2>
+                <p class="text-gray-300 text-sm">Any questions? Let us know in store at 8th floor, 379 Hudson St, New
+                    York,
+                    NY
+                    10018 or call us on (+1) 96 716 6879</p>
+                <div class="flex space-x-4 mt-4 text-gray-300 text-xl ">
+                    <a href="#"><i class="fab fa-facebook hover:text-indigo-600"></i></a>
+                    <a href="#"><i class="fab fa-instagram hover:text-indigo-600"></i></a>
+                    <a href="#"><i class="fab fa-pinterest hover:text-indigo-600"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h2 class="font-bold mb-4">NEWSLETTER</h2>
+                <input type="email" placeholder="email@example.com"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 text-gray-300 focus:outline-none mb-4">
+                <button class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-6 rounded-full">SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <!-- Bottom Info -->
+        <div class="mt-12 text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJVLtfGJ-EXUPR7U2X25F9LwjEWL0RLGI2Q&s"
+                    alt="PayPal" class=" w-8 h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class=" w-8 h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard"
+                    class="w-8 h-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png"
+                    alt="Amex" class="w-8 h-6">
+                <img src="data:image/png;base64,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"
+                    alt="Discover" class="w-8 h-6">
+            </div>
+            <p class="text-gray-400 text-sm flex justify-center items-center gap-1">
+                ©2025 All rights reserved | This template is made with
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="w-4 h-4 text-gray-400" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318A4.5 4.5 0 0112 4.5a4.5 4.5 0 017.682 
+      1.818C21.248 9.124 18.634 12.081 12 17.25
+      5.366 12.081 2.752 9.124 4.318 6.318z" />
+                </svg>
+                by <a href="https://colorlib.com" class="text-blue-400 hover:underline ml-1">Colorlib</a>
+            </p>
+
+        </div>
+
+        <!-- Back to top arrow -->
+        <div class="fixed bottom-2 right-6">
+            <a href="#" class="bg-indigo-200 hover:bg-indigo-600 text-white p-3  shadow-lg transition duration-300">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="cozastore.js"></script>
+</body>
 
 </html>
