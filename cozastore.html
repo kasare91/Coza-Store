@@ -14,76 +14,7 @@
 
 <body class="bg-white">
 
-    <header class="bg-gray-100 border-b flex items-center justify-between px-4 py-2">
-        <!-- Left: Logo & Product Switcher -->
-        <div class="flex items-center space-x-4">
-            <!-- Logo -->
-            <a href="https://colorlib.com/wp/templates/" title="Switcher" class="flex items-center">
-                <img src="assets/img/logo.png" alt="Colorlib logo" class="h-8 w-auto">
-            </a>
-
-            <!-- Product Switcher -->
-            <a href="#" title="Select a Product"
-                class="text-sm text-gray-800 hover:text-blue-600 flex items-center space-x-1">
-                <span>Coza Store</span>
-                <span class="text-xs bg-blue-500 text-white px-2 py-0.5 rounded-full">Template</span>
-            </a>
-        </div>
-
-        <!-- Right: Icons -->
-        <div class="flex items-center space-x-4">
-            <!-- Desktop View -->
-            <a href="#" title="Desktop View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
-                <!-- Desktop Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9.75 17h4.5M3 5.25h18v10.5H3V5.25z" />
-                </svg>
-            </a>
-
-            <!-- Tablet View -->
-            <a href="#" title="Tablet View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
-                <!-- Tablet Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M6 3.75h12a.75.75 0 01.75.75v15a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V4.5A.75.75 0 016 3.75zM12 18.75h.008v.008H12v-.008z" />
-                </svg>
-            </a>
-
-            <!-- Mobile View -->
-            <a href="#" title="Smartphone View" class="hidden md:inline-block text-gray-600 hover:text-blue-600">
-                <!-- Mobile Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M7 4.5h10a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7a.75.75 0 01-.75-.75V5.25A.75.75 0 017 4.5zM12 17.25h.008v.008H12v-.008z" />
-                </svg>
-            </a>
-
-            <!-- Purchase Button -->
-            <a href="#" title="Buy now" class="text-gray-600 hover:text-green-600">
-                <!-- Shopping Cart Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7M7 13l1.293 2.293a1 1 0 00.707.207h7a1 1 0 00.707-.207L17 13M9 21h.01M15 21h.01" />
-                </svg>
-            </a>
-
-            <!-- Remove Button -->
-            <a href="#" title="Close this bar" class="text-gray-600 hover:text-red-500">
-                <!-- Close Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </a>
-        </div>
-    </header>
-
-
+   
     <!-- Header / Topbar -->
     <header class="bg-gray-800 text-gray-400  py-2 px-4 hidden md:flex justify-between items-center text-sm ">
 
@@ -143,8 +74,7 @@
                     <h1 class="text-7xl font-bold mb-6 ">NEW ARRIVALS</h1>
                     <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-black">Shop Now</a>
                 </div>
-                <!-- <img src="https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg.webp" -->
-                <!-- class="max-h-[400px] object-contain drop-shadow-lg" alt="model" /> -->
+               
             </div>
         </div>
         <!-- Arrows -->
@@ -263,8 +193,7 @@
 
 
 
-    <!-- Product Switcher / Templates Showcase -->
-
+    <!-- Product Section -->
 
     <div class="md:mx-20 px-4 bg-white ">
         <h2 class="text-4xl font-bold tracking-wide mb-8 ">PRODUCT OVERVIEW</h2>
@@ -307,7 +236,7 @@
 
         <!-- Filter Panel -->
         <div id="filterPanel" class="hidden transition-all duration-300 overflow-hidden ">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 bg-white p-6 rounded-md shadow">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 bg-gray-200 p-6 rounded-md shadow">
                 <!-- Sort By -->
                 <div>
                     <h3 class="text-lg font-semibold text-gray-800 mb-4">Sort By</h3>
@@ -396,7 +325,7 @@
 
     <!-- Main Content -->
     <section id="mainContent" class="">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white md:mx-10">
             <!-- Product Card -->
             <div class="group relative flex flex-col h-full ">
 
@@ -445,7 +374,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -484,7 +413,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -523,7 +452,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -560,7 +489,7 @@
     <!-- Second Row -->
 
     <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white md:mx-10">
            
             <!-- Card 5 -->
             <div class="group relative">
@@ -572,7 +501,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -612,7 +541,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -652,7 +581,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -692,7 +621,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -727,7 +656,7 @@
     </section>
 
     <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white md:mx-10">
             <!-- Card 9 -->
             <div class="group relative">
                 
@@ -738,7 +667,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -778,7 +707,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -818,7 +747,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -858,7 +787,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -893,7 +822,7 @@
     </section>
 
     <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white md:mx-10">
             <!-- Card 13 -->
             <div class="group relative">
                
@@ -904,7 +833,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -944,7 +873,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -984,7 +913,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -1024,7 +953,7 @@
 
                     <!-- Quick View Button -->
                     <button
-                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100">
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-gray-800 border px-4 py-1 text-sm shadow hover:bg-gray-100 rounded-full">
                         Quick View
                     </button>
                 </div>
@@ -1059,12 +988,10 @@
     </section>
 
 
+    <!-- Load More BTN -->
 
     <div class="flex justify-center  border-gray-600 ">
-        <!-- <button
-            class=" rounded-full bg-black text-white h-20 w-70">
-            LOAD MORE
-        </button> -->
+       
 
         <button class="bg-gray-400 mt-[90px] mb-[150px] hover:bg-gray-900 text-white py-2 px-[30px] rounded-full">LOAD
             MORE</button>
@@ -1073,10 +1000,11 @@
 
 
 
-
+                <!-- FOOTER -->
 
     <footer class="bg-gray-900 text-white py-12 px-4 md:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
             <!-- Categories -->
             <div>
                 <h2 class="font-bold mb-4">CATEGORIES</h2>
